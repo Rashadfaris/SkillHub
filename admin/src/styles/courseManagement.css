@@ -1,0 +1,269 @@
+.course-management-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.course-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.add-course-btn {
+    padding: 8px 16px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-course-btn:hover {
+    background-color: #4338ca;
+}
+
+.course-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-input {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.form-textarea {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.levels-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.levels-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-level-btn {
+    padding: 6px 12px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-level-btn:hover {
+    background-color: #059669;
+}
+
+.level-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.level-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.level-name-input {
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #d1d5db;
+    padding: 4px 0;
+}
+
+.remove-level-btn {
+    color: #dc2626;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-level-btn:hover {
+    color: #b91c1c;
+}
+
+.tasks-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-task-btn {
+    padding: 4px 8px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.add-task-btn:hover {
+    background-color: #2563eb;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.task-input {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+.remove-task-btn {
+    color: #dc2626;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-task-btn:hover {
+    color: #b91c1c;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.cancel-btn {
+    padding: 8px 16px;
+    background-color: white;
+    color: #374151;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background-color: #f9fafb;
+}
+
+.submit-btn {
+    padding: 8px 16px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #4338ca;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.course-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.course-card-description {
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+.course-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.edit-btn {
+    padding: 6px 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #2563eb;
+}
+
+.delete-btn {
+    padding: 6px 12px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+} 

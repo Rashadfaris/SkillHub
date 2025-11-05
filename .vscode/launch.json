@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "LearningTrackerApplication",
+            "request": "launch",
+            "mainClass": "com.skillhub.skillhub.service.LearningTrackerApplication",
+            "projectName": "skillhub"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SkillhubApplication<skillhub>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.skillhub.skillhub.SkillhubApplication",
+            "projectName": "skillhub",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
