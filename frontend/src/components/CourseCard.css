@@ -1,0 +1,148 @@
+.course-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 16px;
+  max-width: 400px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+}
+
+.course-header {
+  margin-bottom: 20px;
+}
+
+.course-header h2 {
+  color: #2d3748;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.course-description {
+  color: #4a5568;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.progress-container {
+  margin-bottom: 24px;
+}
+
+.progress-bar {
+  background: #e2e8f0;
+  border-radius: 8px;
+  height: 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #4299e1;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-text {
+  color: #4a5568;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.course-levels {
+  margin-bottom: 24px;
+}
+
+.course-levels h3 {
+  color: #2d3748;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.level-item {
+  margin-bottom: 16px;
+}
+
+.level-name {
+  color: #4a5568;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.task-list {
+  list-style: none;
+  padding-left: 16px;
+}
+
+.task-item {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.task-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #cbd5e0;
+}
+
+.task-item.clickable {
+  cursor: pointer;
+}
+
+.task-item.clickable:hover {
+  color: #4299e1;
+  transform: translateX(4px);
+}
+
+.task-item.completed {
+  color: #48bb78;
+  text-decoration: line-through;
+}
+
+.task-item.completed::before {
+  color: #48bb78;
+}
+
+.enroll-button {
+  background: #4299e1;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.enroll-button:hover {
+  background: #3182ce;
+}
+
+.enroll-button:active {
+  background: #2c5282;
+}
+
+.enroll-button.enrolled {
+  background: #48bb78;
+  cursor: not-allowed;
+}
+
+.enroll-button.enrolled:hover {
+  background: #48bb78;
+}
+
+.enrolled-courses-info {
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-top: 10px;
+} 

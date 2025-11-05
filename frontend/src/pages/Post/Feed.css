@@ -1,0 +1,312 @@
+.feed-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.feed-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.feed-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+
+
+.new-post-button, .refresh-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.new-post-button {
+    background-color: #1890ff;
+    color: white;
+}
+
+.new-post-button:hover {
+    background-color: #40a9ff;
+}
+
+.refresh-button {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.refresh-button:hover {
+    background-color: #e8e8e8;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #666;
+}
+
+.create-post-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.create-post-button:hover {
+    background-color: #40a9ff;
+}
+
+/* Using the card styles from PostCard.css */
+.post-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.post-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-card-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.post-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+.post-card-type {
+    background-color: #f0f0f0;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.post-card-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-card-title-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post-card-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    color: #222;
+    transition: color 0.2s;
+}
+
+.post-card-title:hover {
+    color: #1890ff;
+}
+
+.post-card-description {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #444;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show only 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.post-card-image-container {
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 250px;
+}
+
+.post-card-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.post-card-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-card-comment-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #666;
+    font-size: 14px;
+}
+
+.post-card-comment-button:hover {
+    background-color: #e8e8e8;
+}
+
+.post-card-comments {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+/* Loading & Error States */
+.loading-container, 
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.loading-text, 
+.error-text {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.retry-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.retry-button:hover {
+    background-color: #40a9ff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feed-container {
+        padding: 1rem;
+    }
+
+    .post-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .post-card {
+        padding: 1.25rem;
+    }
+
+    .post-card-image {
+        height: 180px;
+    }
+
+    .post-card-comments {
+        max-height: 150px;
+    }
+
+    .post-card-comment-button {
+        width: 100%;
+    }
+
+    .post-card-comment-button {
+        opacity: 1;
+    }
+
+    .post-card-comment-button {
+        padding: 0.5rem;
+    }
+
+    .post-card-header {
+        margin-bottom: 0.25rem;
+    }
+
+    .post-card-date {
+        margin-top: 0.25rem;
+    }
+}
